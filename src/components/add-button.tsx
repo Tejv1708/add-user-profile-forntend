@@ -16,7 +16,7 @@ export default function AddButton() {
   const [email, setEmail] = useState("");
   const [hobbies, setHobbies] = useState("");
 
-  const handleProfile = (e) => {
+  const handleProfile = (e: any) => {
     e.preventDefault();
     const data = { name, phonenumber, email, hobbies };
     axios
